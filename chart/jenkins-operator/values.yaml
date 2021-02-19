@@ -132,6 +132,8 @@ jenkins:
     - name: backup # PVC volume where backups will be stored
       persistentVolumeClaim:
         claimName: jenkins-backup
+    - name: redis-storage
+      emptyDir: {}
 
   # volumeMounts are mounts for Jenkins pod
   volumeMounts: []
