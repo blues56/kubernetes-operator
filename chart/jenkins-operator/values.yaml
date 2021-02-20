@@ -138,7 +138,7 @@ jenkins:
 
   # securityContext for pod
   securityContext:
-     supplementalGroups: 1000
+     supplementalGroups: [1000]
      runAsUser: 1000
   #  runAsGroup: 1000
   #  fsGroup: 1000
